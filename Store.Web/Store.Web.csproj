@@ -8,4 +8,11 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\domain\Store\Store.csproj" />
+    <ProjectReference Include="..\Store.Memory\Store.Memory.csproj" />
+  </ItemGroup>
 </Project>
